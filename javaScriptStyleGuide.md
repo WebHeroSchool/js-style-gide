@@ -44,7 +44,7 @@ function sayHi(name) {
   return 'How are you, ' + name + '?';
 }
 
-// Хорошо 😇
+// Хорошо
 function sayHi(name) {
   return `How are you, ${name}?`;
 }
@@ -63,7 +63,7 @@ let obj = {};
 
 ## 6. Устанавливать один пробел перед открывающей скобкой.
 
-// Плохо 😖
+// Плохо
 function test(){
   console.log('test');
 }
@@ -76,7 +76,7 @@ function test() {
 
 ## 7. Использовать camelCase для именования функций и переменных.
 
-// Плохо 😖
+// Плохо
 let OBJEcttsssss = {};
 let this_is_my_object = {};
 function c() {};
@@ -84,7 +84,7 @@ let u = new user({
   name: 'Bob Parr'
 });
 
-// Хорошо 😇
+// Хорошо
 let thisIsMyObject = {};
 function thisIsMyFunction() {};
 let user = new User({
