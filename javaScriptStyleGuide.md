@@ -11,12 +11,10 @@
 
 ``` js
 // Плохо
-
 var name = 'Alex';
 var age = 20;
 
 // Хорошо
-
 const name = 'Alex';
 let age = 20;
 ```
@@ -27,12 +25,10 @@ let age = 20;
 
 ``` js
 // Плохо 
-
 const name = 'Alex'
 let age = 20
 
 // Хорошо 
-
 const name = 'Alex';
 let age = 20;
 ```
@@ -107,14 +103,12 @@ let user = new User({
 
 ``` js
 // Плохо
-
 [1, 2, 3].map(function (x) {
   const y = x + 1;
   return x * y;
 });
 
-// хорошо
-
+// Хорошо
 [1, 2, 3].map((x) => {
   const y = x + 1;
   return x * y;
@@ -123,9 +117,13 @@ let user = new User({
 
 ## 9. Загрузка JavaScript в HTML.
 
-> Используйте простой синтаксис для загрузки внешних скриптов (атрибут type не нужен)
+> Используйте простой синтаксис для загрузки внешних скриптов (без атрибута type)
 
 ``` js
+// Плохо
+ <script src="myscript.js" type="text/javascript">
+ 
+ // Хорошо
 <script src="myscript.js"></script>
 ```
 
@@ -134,6 +132,11 @@ let user = new User({
 > Всегда ставьте пробелы вокруг операторов (= + - * /) и после запятых
 
 ``` js
+// Плохо
+const x=y+z;
+const values = ["Volvo","Saab","Fiat"];
+
+// Хорошо
 const x = y + z;
 const values = ["Volvo", "Saab", "Fiat"];
 ```
